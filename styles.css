@@ -13,17 +13,17 @@ body {
 
 /* Header Styles */
 header {
-    height: 100vh;
+
 }
 
 
 nav{
-    background-color: #333;
+    background-color: #131313;
     color: #fff;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 26px;
 }
 .logo img {
     max-width: 100%;
@@ -60,10 +60,12 @@ nav a {
 }
 
 /* Hero Banner Styles */
+main{
+    height: 100vh;
+}
 .hero {
     background-image: url('hero-image.jpg');
-
-    /* background-size: cover; */
+    background-size: cover;
     text-align: center;
     /* padding: 100px 0; */
     height: 100%;
@@ -139,7 +141,6 @@ nav a {
 
 }
 
-
 .card-section{
     display: flex;
     justify-content: space-around;
@@ -174,11 +175,98 @@ nav a {
     color: #fff;
 }
 
+/* AI Software section */
+.ai-software{
+    padding: clamp(4rem,10vw,8rem) 0;
+    background-color: #2a2a2a;
+    color: #fff;
+}
+.ai-title h1{
+    margin-bottom: 1.5rem;
+    font-size: clamp(1.75rem,8vw,3rem);
+    font-weight: 700;
+    text-align: center;
+}
+.ai-body-section{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.application-title{
+    display: flex;
+    margin: 1rem;
+    justify-content: space-around;
+    padding: 2rem 0;
+    width: 100%;
+}
+.classapplication-title-card{
+    min-width: 30%;
+    border: 5px solid #fff;
+    text-align: center;
+}
+.classapplication-title-card h2{
+    text-align: center;
+}
+
+.application-image{
+    width: 50%;
+    
+}
+.application-description{
+    padding-top: 25px;
+    width: 50%;
+}
+
+.client-logos{
+    padding: 192px 0;
+    background-color: #1a1a1a;
+}
+
+.client-logos > div{
+    padding: 0 24px;
+}
+.client-title{
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+}
+.client-title h1{
+    font-size: clamp(1.75rem,8vw,3rem);
+    font-weight: 700;
+}
+.client-logo-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+.logo-card{
+    background-color: #2a2a2a;
+    width: 137px;
+    height: 137px;
+    margin: 15px;
+    background-image: url(baker-hughes-logo-stacked-white.svg);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+
+
+
+
+
+
+
+
 /* Footer Styles */
 footer {
-    background-color: #333;
+    background-color: #1a1a1a;
     color: #fff;
-    padding: 20px 0;
+    padding: 24px 24px;
     text-align: center;
 }
 
