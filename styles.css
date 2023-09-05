@@ -267,6 +267,7 @@ main{
 
 .ai-studio-title{
     text-align: center;
+    padding: 25px;
 }
 .ai-studio-title h1{
     font-size: clamp(1.75rem,8vw,3rem);
@@ -300,9 +301,31 @@ main{
     color: #1a1a1a;
     border: 0;
 }
+.studio-cards{
+    margin-top: 25px;
+    display: flex;
+}
+.studio-card{
+    width: 25%;
+    padding: 22px;
+    margin: 16px 0;
+    border-left: 2px solid grey;
+}
+.studio-card h1{
+    font-size: clamp(20px,2vw,24px);
+    font-weight: 700;
+    margin-bottom: 25px;
+    letter-spacing: -0.5px;
+    margin-bottom: 2rem;
+}
 
-
-
+.studio-card p{
+    margin: 0;
+    color: #919191;
+    font-size: clamp(14px,2vw,18px);
+    line-height: 1.35;
+    text-rendering: optimizeLegibility;
+}
 
 
 
