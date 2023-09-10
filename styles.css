@@ -3,7 +3,9 @@
     padding: 0;
     font-family: Helvetica,Arial,sans-serif;
 }
-
+:root{
+    font-size: 16px;
+}
 /* Set a background color and text color for the entire page */
 body {
     background-color: #f4f4f4;
@@ -12,9 +14,9 @@ body {
 }
 
 /* Header Styles */
-header {
+/* header {
 
-}
+} */
 
 
 nav{
@@ -33,6 +35,10 @@ nav{
 nav ul {
     list-style: none;
     display: flex;
+}
+
+.fa-solid{
+    display: none;
 }
 
 nav li {
@@ -199,22 +205,54 @@ main{
     padding: 2rem 0;
     width: 100%;
 }
-.classapplication-title-card{
-    min-width: 30%;
-    border: 5px solid #fff;
-    text-align: center;
+.application-title-card{
+    width: 30%;
+    border-top: 2px solid #fff;
+    padding-top: 20px;
 }
-.classapplication-title-card h2{
-    text-align: center;
+.application-title-card h2{
+    font-weight: 700;
+    font-size: clamp(0.75rem,2vw,1.25rem);
+}
+.ai-body-content{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    /* background-color: red; */
+    width: 100%;
+    
 }
 
 .application-image{
-    width: 50%;
-    
+    width: 50%; 
+}
+.application-image img{
+    margin: 14px auto;
 }
 .application-description{
     padding-top: 25px;
     width: 50%;
+}
+.application-description div{
+    width: 60%;
+}
+
+.application-description h1{
+    margin-bottom: 1.5rem;
+    font-size: clamp(1.25rem,8vw,2rem);
+    font-weight: 700;
+}
+.application-description p{
+    max-width: 570px;
+    font-size: clamp(1rem,5vw,1.125rem);
+    font-weight: 400;
+    line-height: 1.45;
+}
+.application-description ul{
+    margin-left: 1.25rem;
+}
+.application-description li{
+        font-size: clamp(1rem,5vw,1.125rem);
 }
 
 .client-logos{
@@ -358,4 +396,96 @@ footer ul a{
 footer li {
     display: inline;
     margin-right: 20px;
+}
+
+/* Mobile design */
+@media (max-width: 426px) {
+
+    .nav-ul {
+        display: none;
+    }
+    .mobile-nav{
+        display: inline-block;
+    }
+    .ai-body-section{
+        flex-direction: column-reverse;
+    }
+    .application-image{
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .application-image img{
+        width: 80%;
+        /* margin: 25px; */
+    }
+    .application-description{
+        width: 80%;
+        margin: 20px auto;
+    }
+
+    .application-title{
+        flex-direction: column;
+    }
+    .ai-body-content{
+        flex-direction: column;
+    }
+    .application-title-card{
+        width: 80%;
+        border-top: 0;
+        padding-top: 20px;
+    }
+    .application-title-card h2{
+        font-size: clamp(1.75rem,2vw,1.25rem);
+    }
+    .client-logo-section{
+        justify-content: space-evenly;
+    }
+
+
+    
+
+
+
+
+    .studio-cards{
+        flex-direction: column;
+    }
+    .studio-card{
+        width: 90%;
+    }
+
+
+
+    .nav-icon{
+        flex-direction: column;
+        align-items: start;
+    }
+    footer ul{
+        text-align: left;
+        margin-bottom: 30px;
+    }
+
+    footer li {
+        display: block;
+        margin-bottom: 16px;
+        
+
+    }
+    footer li a{
+        font-size: 14px;
+    }
+    .social ul{
+        margin-bottom: 0;
+    }
+    .social li{
+        display: inline;
+
+    }
+    .copy li{
+        color: #aaa;
+        font-size: 12px;
+    }
+
 }
